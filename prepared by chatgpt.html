@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table and List Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h3 {
+            color: #2c3e50;
+        }
+        table {
+            margin-bottom: 20px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid #bdc3c7;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #34495e;
+            color: white;
+        }
+        ul, ol {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Learning HTML: Tables and Lists</h1>
+
+    <p>Welcome to this learning resource where we'll explore how to create and style tables and lists using HTML. By the end of this page, you'll understand how to use various HTML attributes and elements to build structured content on a webpage.</p>
+
+    <h3>TABLE USING CELLPADDING AND CELLSPACING</h3>
+    <p>In HTML, <strong>cellpadding</strong> adds space inside the table cells, and <strong>cellspacing</strong> adds space between the cells. This can make your table more readable by preventing the content from being too close together.</p>
+    <p>Here's an example:</p>
+    <table border="1" width="500px" cellpadding="5" cellspacing="5">
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Sudhakar</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Sagar</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Sudha Murthy</td>
+        </tr>
+    </table>
+
+    <h3>TABLE USING CELLSPACING ONLY</h3>
+    <p>In this example, the <strong>cellpadding</strong> is disabled, so only the <strong>cellspacing</strong> is applied:</p>
+    <table border="1" width="500px" cellspacing="5">
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Sudhakar</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Sagar</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Sudha Murthy</td>
+        </tr>
+    </table>
+
+    <h3>TABLE USING CELLPADDING ONLY</h3>
+    <p>Here, the <strong>cellspacing</strong> is disabled, so only the <strong>cellpadding</strong> is applied:</p>
+    <table border="1" width="500px" cellpadding="5">
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Sudhakar</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Sagar</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Sudha Murthy</td>
+        </tr>
+    </table>
+
+    <h3>TABLE WITH HEADER CELLS</h3>
+    <p>By using the <strong>&lt;th&gt;</strong> tag, you can create header cells that are usually bold and centered by default:</p>
+    <table border="1" width="500px" cellpadding="5">
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Sudhakar</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Sagar</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Sudha Murthy</td>
+        </tr>
+    </table>
+
+    <h3>ROWSPAN AND COLSPAN</h3>
+    <p>To merge cells across rows or columns, you can use the <strong>rowspan</strong> and <strong>colspan</strong> attributes.</p>
+
+    <h4>EXAMPLE OF COLUMN SPAN</h4>
+    <p>This example shows how to merge two columns into a single cell:</p>
+    <table border="1" width="500px" cellpadding="5">
+        <tr>
+            <td colspan="2">SRI GEETHA SCHOOLS</td>
+        </tr>
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Sudhakar</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Sagar</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Sudha Murthy</td>
+        </tr>
+    </table>
+
+    <h4>EXAMPLE OF ROW SPAN AND COLUMN SPAN</h4>
+    <p>This example demonstrates how to use both <strong>rowspan</strong> and <strong>colspan</strong> in a table:</p>
+    <table border="1" width="500px" cellpadding="5">
+        <tr>
+            <th colspan="3">SRI GEETHA SCHOOLS</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Student ID</th>
+            <th>Student Name</th>
+        </tr>
+        <tr>
+            <th rowspan="3">CLASS X</th>
+            <td>101</td>
+            <td>Sudhakar</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Sagar</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Sudha Murthy</td>
+        </tr>
+    </table>
+
+    <h3>BACKGROUND COLOR AND IMAGES IN TABLES</h3>
+    <p>HTML allows you to add background colors and images to tables, which can make your data presentation more attractive.</p>
+
+    <h5>EXAMPLE OF BACKGROUND COLOR:</h5>
+    <p>This table has a green background:</p>
+    <table border="1" bgcolor="green" width="500px" cellpadding="5" cellspacing="5">
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Sudhakar</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Sagar</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Sudha Murthy</td>
+        </tr>
+    </table>
+
+    <h5>EXAMPLE OF USING BACKGROUND IMAGE:</h5>
+    <p>This table uses an image as the background:</p>
+    <table border="1" background="Images/cat.jpeg" width="500px" cellpadding="5" cellspacing="5">
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Sudhakar</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Sagar</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Sudha Murthy</td>
+        </tr>
+    </table>
+
+    <h5>EXAMPLE OF CAPTION AND FOOTER FOR THE TABLE:</h5>
+    <p>Here, a caption and a footer are added to the table:</p>
+    <table border="1" width="500px" cellpadding="5" cellspacing="5">
+        <caption>This is a caption</caption>
+        <tfoot>
+            <tr>
+                <td colspan="2">This is a footer</td>
+            </tr>
+        </tfoot>
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Sudhakar</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Sagar</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Sudha Murthy</td>
+        </tr>
+    </table>
+
+    <h3>HTML LISTS</h3>
+    <p>Lists are a great way to organize content. HTML provides two main types of lists:</p>
+
+    <h4>Ordered Lists</h4>
+    <p>Ordered lists use numbers or letters to order list items:</p>
+    <ol>
+        <li>This is a list item</li>
+        <li>This is another list item</li>
+    </ol>
+
+    <h5>Different Numbering Styles:</h5>
+    <ol type="a">
+        <li>Item a</li>
+        <li>Item b</li>
+    </ol>
+    <ol type="i">
+        <li>Item i</li>
+        <li>Item ii</li>
+    </ol>
+    <ol type="A" start="5">
+        <li>Item 5</li>
+        <li>Item 6</li>
+    </ol>
+
+    <h4>Unordered Lists</h4>
+    <p>Unordered lists use bullets to list items:</p>
+    <ul>
+        <li>This is a list item</li>
+        <li>This is another list item</li>
+    </ul>
+
+    <h5>Different Bullet Styles:</h5>
+    <ul type="circle">
+        <li>Item with a circle bullet</li>
+    </ul>
+    <ul type="square">
+        <li>Item with a square bullet</li>
+    </ul>
+
+    <p>Note: The attribute <code>type="cube"</code> is not a valid HTML option and won't change the list style.</p>
+
+</body>
+</html>

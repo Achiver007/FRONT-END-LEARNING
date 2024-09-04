@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" type="text/css"  href="../css/fg.css"/>
+    <!-- <style>
+
+        body{
+            margin: 4em;
+            background-color: antiquewhite;
+        }
+        h1{
+            color:darkblue;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h2{
+            color:rgb(65, 115, 14);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h3{
+            color:rgb(43, 169, 169);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        </style> -->
+
+</head>
+<body> 
+    <h1>CSS :</h1><p>cascading style sheet</p>
+            
+            <h2>Advantages of css :</h2>
+            <ul>
+
+              <li>saves time</li>
+              <li>page loads faster</li>
+              <li>Easy maintence</li>
+              <li>Superior styles to Html</li>
+              <li>Multiple device compatibility</li>
+
+              </ul>
+
+<!-- <h5>Example for inline style</h5>
+
+<pre>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style type="text/css">
+        h1{
+            color:rgb(21, 82, 135);
+            font-family:comic sans ms;
+        }
+        h2{
+            color:aquamarine;
+        }
+        </style>
+    <body>
+        <h1>Welcome to web page</h1>
+        <h2>Are you excited to learn css</h2>
+    </body>
+    </html>
+
+    </pre> -->
+
+
+<h2>Selectors :</h2>
+    <p>Selectors are used to select particular element or particular portion .</p>
+
+<h3>Types :</h3>
+
+<ul>
+    <li>Name selector :Selects HTML elements based on their tag names (e.g., p, h1, div).Usage: This selector styles all instances of the specified element type on the page.Syntax: Simply use the element's name.</li>
+     <li>Class selector :Selects elements that have a specific class attribute. Classes can be used on multiple elements, making them suitable for styling groups of elements,Usage: Use for styling multiple elements with the same class. Syntax: Use a . followed by the class name</li>
+     <li>Id selector :Selects an element based on its unique id attribute. IDs are unique within a page and should be used only once per element,Usage: Use when you need to style a single, specific element.Syntax: Use a # followed by the element's ID</li>
+     <li>Universal selector :Selects all elements on the page,Usage: Useful for applying a style to every element on the page, like resetting margin and padding.
+        Syntax: An asterisk "*".</li>
+</ul>
+
+<h2> Inclusion in HTML :</h2>
+
+<ol>
+    <li>Inline :Inline CSS involves writing CSS rules directly inside the HTML elements using the style attribute. It applies styles directly to a specific element.</li>
+        <ul>
+            <li>Usage: Ideal for quick fixes or unique styling for a single element but not recommended for large-scale styling due to poor maintainability.</li>
+        </ul>
+    <li>Embedding :Embedded CSS (or internal CSS) refers to styles written within a style tag placed in the head section of the HTML document. It applies to the entire HTML document.</li>
+        <ul>
+            <li>
+Usage: Useful for applying styles to a single HTML page. It keeps styles within the same file but still separates them from the content</li>
+</ul>
+    <li>Linking :Linking CSS involves using an external .css file and connecting it to the HTML document with a <link> tag inside the <head>. This approach keeps the HTML and CSS code separate, promoting better organization and reusability.</li>
+        <ul>
+            <li>Usage: Best for larger projects where the CSS needs to be reused across multiple HTML files. This method allows for a clean and maintainable structure.</li>
+            </ul>
+    <li>Importing :Exporting CSS generally refers to creating a separate CSS file (.css) that is referenced in multiple projects or documents. It's essentially another term for external CSS but emphasizes reusability across different applications or environments.</li>
+    <ul><li>
+        Usage: Used when you want to share CSS rules across various web applications or ensure consistency in styling multiple projects by exporting the CSS file and including it wherever necessary.</li></ul>
+</ol>
+
+
+<h2>Background</h2>
+
+<h3>Background-image :</h3>
+           <pre> Sets the background image for an element.</pre>
+<!-- we can add images to the bacxkground <body style="background-image: url('../Images/cat.jpeg')" -->
+<!-- style="background-image: url('../Images/cat.jpeg');background-position: 4em;background-repeat: no-repeat;background-attachment: fixed;"-->
+
+<p> 
+    Type of attributes we can use in Background-image are :
+</p>
+
+<h3>Types :</h3>
+
+<ol>
+    <li>background-repeat :</li>
+ <ul>
+    <li>Values :</li>
+    <li>'repeat' (default): Repeats the image both horizontally and vertically.</li>
+    <li>'repeat-x': Repeats the image horizontally only.</li>
+    <li>'repeat-y': Repeats the image vertically only.</li>
+    <li>'no-repeat': The image is not repeated.</li>
+</ul>
+
+
+    <li>'background-size' :Defines the size of the background image.</li>
+    <ul>
+        <li>Values :</li>
+        <li>'auto': Keeps the original size of the image.</li>
+           <li>'cover': Scales the image to cover the entire element, cropping as necessary.</li> 
+         <li> 'contain': Scales the image to fit within the element, maintaining aspect ratio.</li>
+        <li>Specific sizes like 100px, 50%, etc.</li>
+        <li></li>
+    </ul>
+
+    <li>'background-position': Sets the starting position of the background image within the element.</li>
+<ul>
+    <li>Values :</li>
+    <li>Keywords: top, bottom, left, right, center.</li>
+    <li>Coordinates: 50px 100px, 20% 30%.</li>
+    </ul>
+
+    <li>background-attachment :Specifies whether the background image scrolls with the page or is fixed.</li>
+    <ul>
+    <li>'scroll': The background image scrolls with the page.</li>
+        <li>'fixed': The background image is fixed in place.</li>
+       <li> 'local': The background scrolls within the element it is applied to.</li>
+    </ul>
+
+    <li>
+        'background-clip':Defines the area within which the background image is visible.
+    </li>
+    <ul>
+        <li>'border-box': The background extends to the outer edge of the border.</li>
+            <li>padding-box: The background extends to the edge of the padding box.</li>
+           <li> content-box: The background is only visible within the content area</li>
+        </ul>
+    <li>'background-origin' :Sets the positioning area of the background image.
+    </li>
+    <ul>
+        <li>Values :</li>
+        <li>'border-box': Positions the background relative to the border box.</li>
+           <li>'padding-box': Positions the background relative to the padding box</li> 
+            <li>'content-box': Positions the background relative to the content box.</li>
+    </ul>
+    <li>'background-color': Sets a background color that appears behind the background image or when the image is not visible.</li>
+    <li> background-blend-mode :Specifies how the background image blends with the background color or other background images.</li>
+    <ul>
+    <li>normal, multiply, screen, overlay, darken, lighten, etc.</li></ul>
+    </ol>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops" xml:lang="en" lang="en">
+<head>
+<title>INTRODUCTION TO HTML</title>
+<link rel="stylesheet" type="text/css" href="../Styles/style.css"/>
+
+</head>
+<body>
+<p>20:47 27-08-2024</p>
+<p></p>
+<p>FORMATTING TAGS:</p>
+
+<p>1. <b>BOLD</b> ex: <b>This is bold text</b></p>
+
+<p>2. <i>ITALIC</i> ex: <i>This is italic text</i></p>
+
+<p>3. <u>UNDERLINE</u> ex: <u>This is underlined text</u></p>
+
+<p>4. <sub>SUBSCRIPT</sub> ex: H<sub>2</sub>O</p>
+
+<p>5. <sup>SUPERSCRIPT</sup> ex: E = mc<sup>2</sup></p>
+
+<p>6. <big>BIG</big> ex: <big>This is big text</big></p>
+
+<p>7. <small>SMALL</small> ex: <small>This is small text</small></p>
+
+<p>8. <code>MONOSPACED</code> ex: <code>This is monospaced text</code></p>
+
+<p>9. <strike>STRIKE</strike> ex: <strike>This is strikethrough text</strike></p>
+
+<p></p>
+<p></p>
+<p><strong>Phrase Tags</strong></p>
+
+<p><strong>1. EMPHASIS (<em>&lt;em&gt;</em>)</strong>:</p>
+<p><strong>Definition</strong>: The &lt;em&gt; tag is used to emphasize text, typically rendering it in italics. It indicates that the enclosed text has stress or importance.</p>
+<p><strong>Example</strong>:</p>
+<p>This text is <em>emphasized</em>.</p>
+<p><em>Output</em>: This text is <em>emphasized</em>.</p>
+
+<p><strong>2. ADDRESS (<em>&lt;address&gt;</em>)</strong>:</p>
+<p><strong>Definition</strong>: The &lt;address&gt; tag is used to provide contact information for the author/owner of a document or article. It typically renders in italics and often includes an email address, phone number, or physical address.</p>
+<p><strong>Example</strong>:</p>
+<p>Please reach me at: <address>3-140/1, Venkateswara Hills Colony</address>.</p>
+<p><em>Output</em>: Please reach me at: <em>3-140/1, Venkateswara Hills Colony</em>.</p>
+
+<p><strong>3. MARKED TEXT (<em>&lt;mark&gt;</em>)</strong>:</p>
+<p><strong>Definition</strong>: The &lt;mark&gt; tag highlights text by changing its background color to yellow, indicating it’s important or relevant.</p>
+<p><strong>Example</strong>:</p>
+<p>This is my <mark>book</mark>.</p>
+<p><em>Output</em>: This is my <mark>book</mark> (with yellow background).</p>
+
+<p><strong>4. ABBREVIATION (<em>&lt;abbr&gt;</em>)</strong>:</p>
+<p><strong>Definition</strong>: The &lt;abbr&gt; tag is used to define an abbreviation or acronym. The <code>title</code> attribute is often used with this tag to provide the full form when the user hovers over the abbreviation.</p>
+<p><strong>Example</strong>:</p>
+<p>I love to work at <abbr title="COAL INDIA LIMITED">CIL</abbr>.</p>
+<p><em>Output</em>: I love to work at <abbr title="COAL INDIA LIMITED">CIL</abbr> (hovering over "CIL" shows "COAL INDIA LIMITED").</p>
+
+<p><strong>5. STRONG (<em>&lt;strong&gt;</em>)</strong>:</p>
+<p><strong>Definition</strong>: The &lt;strong&gt; tag is used to indicate strong importance, seriousness, or urgency. It typically renders text in bold.</p>
+<p><strong>Example</strong>:</p>
+<p>This is my <strong>life</strong>.</p>
+<p><em>Output</em>: This is my <strong>life</strong>.</p>
+
+<p><strong>6. QUOTATION (<em>&lt;q&gt;</em>)</strong>:</p>
+<p><strong>Definition</strong>: The &lt;q&gt; tag is used for short inline quotations. Browsers typically enclose the quoted text in quotation marks.</p>
+<p><strong>Example</strong>:</p>
+<p>The teacher said, <q>Knowledge is power.</q></p>
+<p><em>Output</em>: The teacher said, “Knowledge is power.”</p>
+
+<p><strong>Meta Data and Comments</strong></p>
+
+<p><strong>META DATA</strong>: Meta data refers to data about data. It is often used in &lt;meta&gt; tags in the &lt;head&gt; section of an HTML document to provide information like keywords, description, author, etc., which is not visible on the web page but helps with SEO and other purposes.</p>
+
+<p><strong>COMMENTS (<em>&lt;!-- ... --&gt;</em>)</strong>:</p>
+<p><strong>Definition</strong>: Comments in HTML are enclosed within &lt;!-- ... --&gt;. They are not displayed on the webpage but help developers understand the code. Comments are often used to explain the purpose of certain parts of the code or to temporarily disable code without deleting it.</p>
+<p><strong>Example</strong>:</p>
+<p>&lt;!-- This is a comment and won't be displayed on the webpage --&gt;</p>
+<p><em>Output</em>: (Nothing is displayed on the page).</p>
+
+<p><strong>Image Tag</strong></p>
+
+<p><strong>IMAGE TAG (<em>&lt;img&gt;</em>)</strong>:</p>
+<p><strong>Definition</strong>: The &lt;img&gt; tag is used to embed images in an HTML document. The <code>src</code> attribute specifies the path to the image, <code>alt</code> provides alternative text if the image cannot be displayed, <code>border</code> sets the border thickness, and <code>align</code> controls the alignment of the image relative to surrounding text.</p>
+<p><strong>Example</strong>:</p>
+<p>&lt;img src="Images/logo.jpg" alt="logo" border="2" align="left"&gt;</p>
+<p><em>Output</em>: An image from <code>Images/logo.jpg</code> is displayed with a border of 2 pixels, aligned to the left.</p>
+
+<br/>
+<br/>
+<br/>
+<h3>TABLE USING CELLPADDING ND CELLSPACING :</h3>
+
+<h5>Example:</h5>
+<table border="1" widhth="500px" cellpadding="5" cellspacing="5" >
+<tr>
+<td>student id</td>
+<td>student name</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td>sudhakar</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>sagar</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>sudha murthy</td>
+</tr>
+</table>
+
+
+
+
+
+
+<br/>
+<h3>TABLE USING CELLSPACING,<h5>by commenting cellpadding="5" </h5>Example:</h3>
+<!--cellpadding="5"-->
+<table border="1" widhth="500px" cellspacing="5" >
+<tr>
+<td>student id</td>
+<td>student name</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td>sudhakar</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>sagar</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>sudha murthy</td>
+</tr>
+</table>
+
+
+
+<br/>
+<h3>TABLE USING CELLPADDING,<h5>by commenting cellspacing="5" </h5>Example:</h3>
+<!--cellspacing="5"-->
+<table border="1" widhth="500px" cellpadding="5" >
+<tr>
+<td>student id</td>
+<td>student name</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td>sudhakar</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>sagar</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>sudha murthy</td>
+</tr>
+</table>
+
+<br/>
+<h3>TABLE USING CELLPADDING,<h5>by commenting cellspacing="5"  AND ADDING "th" WHICH IS TABLE HEAD</h5>Example:</h3>
+<!--cellspacing="5"-->
+<table border="1" widhth="500px" cellpadding="5" >
+<tr>
+<th>student id</th>
+<th>student name</th>
+</tr>
+
+<tr>
+<td>101</td>
+<td>sudhakar</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>sagar</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>sudha murthy</td>
+</tr>
+</table>
+
+<h3>To Merge the two columns and two rows we use rowspan and columnspan  </h3>
+
+
+
+
+<h4>EXAMPLE OF COLUMN SPAN :  </h4>
+<table border="1" widhth="500px" cellpadding="5" >
+
+<tr>
+<td colspan="2">SRI GEETHA SCHOOLOS</td>
+</tr>
+
+<tr>
+<th>student id</th>
+<th>student name</th>
+</tr>
+
+<tr>
+<td>101</td>
+<td>sudhakar</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>sagar</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>sudha murthy</td>
+</tr>
+
+<tr>
+<td colspan="2">SRI VIDHYA SCHOOLOS</td>
+</tr>
+<tr>
+<th>student id</th>
+<th>student name</th>
+</tr>
+<tr>
+<td>201</td>
+<td>sudhakar</td>
+</tr>
+
+<tr>
+<td>202</td>
+<td>sagar</td>
+</tr>
+
+<tr>
+<td>203</td>
+<td>sudha murthy</td>
+</tr>
+
+</table>
+
+
+<br />
+<h4>EXAMPLE OF ROW SPAN AND COLSPAN : </h4>
+<table border="1" widhth="500px" cellpadding="5">
+
+<tr>
+<th colspan="3">SRI GEETHA SCHOOLOS</th>
+</tr>
+
+<tr>
+<th></th>
+<th>student id</th>
+<th>student name</th>
+</tr>
+
+<tr>
+<th rowspan="3">CLASS X</th>
+<td>101</td>
+<td>sudhakar</td>
+</tr>
+
+<tr>
+
+<td>102</td>
+<td>sagar</td>
+</tr>
+
+<tr>
+
+<td>103</td>
+<td>sudha murthy</td>
+</tr>
+
+<tr>
+<th colspan="3">SRI VIDHYA SCHOOLOS</th>
+</tr>
+<tr>
+<th></th>
+<th>student id</th>
+<th>student name</th>
+</tr>
+<tr>
+<th rowspan="3">CLASS VIII</th>
+<td>201</td>
+<td>sudhakar</td>
+</tr>
+80
+<tr>
+
+<td>202</td>
+<td>sagar</td>
+</tr>
+
+<tr>
+
+<td>203</td>
+<td>sudha murthy</td>
+</tr>
+
+</table>
+
+<br/>
+
+<h4>We can add background color  and images to the table  </h4>
+
+<h5>EXAMPLE OF BACKGROUD COLOR:</h5>
+<table border="1" bgcolor="green" widhth="500px" cellpadding="5" cellspacing="5" >
+<tr>
+<td>student id</td>
+<td>student name</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td>sudhakar</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>sagar</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>sudha murthy</td>
+</tr>
+</table>
+
+<br />
+
+
+<h5>EXAMPLE OF USING BACKGROUD IMAGE:</h5>
+<table border="1" background="Images/cat.jpeg" widhth="500px" cellpadding="5" cellspacing="5" >
+<tr>
+<td>student id</td>
+<td>student name</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td>sudhakar</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>sagar</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>sudha murthy</td>
+</tr>
+</table>
+
+<br/>
+
+<h5>EXAMPLE OF USING CAPTION AND FOTTER FOR THE TABLE :</h5>
+<table border="1" widhth="500px" cellpadding="5" cellspacing="5" >
+<caption>This is a caption</caption>
+<tfoot>
+<td colspan="3">This is a footer </td>
+</tfoot>
+<tr>
+<td>student id</td>
+<td>student name</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td>sudhakar</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>sagar</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>sudha murthy</td>
+</tr>
+</table>
+
+<h3>LISTS</h3>
+<ol type="I">
+ <li>ordered</li>
+<li>unordered</li>
+<li>definition </li>
+</ol>
+
+
+<h4>ORDERED LIST :</h4>
+<p># Without using "type " in "ol"  tag :</p>
+<ol>
+<li>apple</li>
+<li>tom</li>
+<li>ate</li>
+<li>sleept</li>
+</ol>
+
+<br/>
+<p># With using type = "a" in "ol"  tag :</p>
+<ol type="a">
+<li>apple</li>
+<li>tom</li>
+<li>ate</li>
+<li>sleept</li>
+</ol>
+
+
+<br/>
+<p># With using type = "i" in "ol"  tag :</p>
+<ol type="i">
+<li>apple</li>
+<li>tom</li>
+<li>ate</li>
+<li>sleept</li>
+</ol>
+
+
+
+
+
+<br/>
+<p># With using type = "A" in "ol"  tag :</p>
+<ol type="A">
+<li>apple</li>
+<li>tom</li>
+<li>ate</li>
+<li>sleept</li>
+</ol>
+
+<br/>
+<p># With using type = "A" in "ol"  tag and we can also use start to tell the list  from  what point it should start :</p>
+<ol type="A" start="5">
+<li>apple</li>
+<li>tom</li>
+<li>ate</li>
+<li>sleept</li>
+</ol>
+
+<br/>
+<h4>UNORDERED LIST</h4>
+<p># Without using type  in "ul"  tag :</p>
+<ul>
+<li>apple</li>
+<li>tom</li>
+<li>ate</li>
+<li>sleept</li>
+</ul>
+<br/>
+<p># With using type="circle"  in "ul"  tag :</p>
+<ul type="circle">
+<li>apple</li>
+<li>tom</li>
+<li>ate</li>
+<li>sleept</li>
+</ul>
+
+<br/>
+<p># With using type="square"  in "ul"  tag :</p>
+<ul type="square">
+<li>apple</li>
+<li>tom</li>
+<li>ate</li>
+<li>sleept</li>
+</ul>
+
+<br/>
+<p># With using type="cube"  in "ul"  tag :</p>
+<ul type="cube">
+<li>apple</li>
+<li>tom</li>
+<li>ate</li>
+<li>sleept</li>
+</ul>
+
+ <h1>HTML Hyperlinks Cheat Sheet</h1>
+
+    <h2>1. What is a Hyperlink?</h2>
+    <p>A hyperlink (or link) is a clickable element in a web page that directs users to another page or resource, such as a document, image, or another website.</p>
+
+    <h2>2. Basic Hyperlink Syntax</h2>
+    <p><code>&lt;a href="URL"&gt;Link Text&lt;/a&gt;</code></p>
+    <pre>
+&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;
+    </pre>
+
+    <h2>3. Types of Links</h2>
+
+    <h3>3.1. Absolute Links</h3>
+    <p><code>&lt;a href="https://www.example.com"&gt;Example Website&lt;/a&gt;</code></p>
+    <pre>
+&lt;a href="https://www.example.com"&gt;Example Website&lt;/a&gt;
+    </pre>
+
+    <h3>3.2. Relative Links</h3>
+    <p><code>&lt;a href="/about.html"&gt;About Us&lt;/a&gt;</code></p>
+    <pre>
+&lt;a href="/about.html"&gt;About Us&lt;/a&gt;
+    </pre>
+
+    <h3>3.3. Anchor Links (In-Page Navigation)</h3>
+    <p><code>&lt;a href="#section1"&gt;Go to Section 1&lt;/a&gt;</code></p>
+    <pre>
+&lt;a href="#section1"&gt;Go to Section 1&lt;/a&gt;
+...
+&lt;h2 id="section1"&gt;Section 1&lt;/h2&gt;
+    </pre>
+
+    <h2>4. Opening Links in a New Tab</h2>
+    <p><code>&lt;a href="https://www.example.com" target="_blank"&gt;Open in New Tab&lt;/a&gt;</code></p>
+    <pre>
+&lt;a href="https://www.example.com" target="_blank"&gt;Open in New Tab&lt;/a&gt;
+    </pre>
+
+    <h2>5. Mailto Links (Email Links)</h2>
+    <p><code>&lt;a href="mailto:someone@example.com"&gt;Send Email&lt;/a&gt;</code></p>
+    <pre>
+&lt;a href="mailto:someone@example.com"&gt;Send Email&lt;/a&gt;
+    </pre>
+
+    <h2>6. Adding Tooltips to Links</h2>
+    <p><code>&lt;a href="https://www.example.com" title="Visit Example Site"&gt;Example&lt;/a&gt;</code></p>
+    <pre>
+&lt;a href="https://www.example.com" title="Visit Example Site"&gt;Example&lt;/a&gt;
+    </pre>
+
+    <h2>7. Linking to Files</h2>
+    <p><code>&lt;a href="document.pdf" download&gt;Download PDF&lt;/a&gt;</code></p>
+    <pre>
+&lt;a href="document.pdf" download&gt;Download PDF&lt;/a&gt;
+    </pre>
+
+    <h2>8. Styling Links with CSS</h2>
+    <pre>
+/* Unvisited link */
+a {
+    color: blue;
+}
+
+/* Visited link */
+a:visited {
+    color: purple;
+}
+
+/* Mouse over link */
+a:hover {
+    color: red;
+}
+
+/* Selected link */
+a:active {
+    color: green;
+}
+    </pre>
+
+    <h2>9. Best Practices</h2>
+    <ul>
+        <li><strong>Use Descriptive Text:</strong> Make sure the link text is descriptive of the destination.</li>
+        <li><strong>Check Links:</strong> Ensure all links work and lead to the correct destination.</li>
+        <li><strong>Use Proper Contrast:</strong> Make sure links are easily visible and accessible.</li>
+    </ul>
+
+<br/>
+<br/>
+
+    <h1>HTML Frames Guide</h1>
+
+    <h2>1. What are HTML Frames?</h2>
+    <p>HTML frames are used to divide a browser window into multiple sections, each of which can load a separate HTML document. Frames were widely used in older websites but are now considered obsolete and replaced by more modern layout techniques such as <code>&lt;div&gt;</code> elements with CSS.</p>
+
+    <h2>2. Basic Frame Structure</h2>
+    <p>The basic structure of frames is created using the <code>&lt;frameset&gt;</code> and <code>&lt;frame&gt;</code> tags:</p>
+    <pre>
+&lt;frameset cols="50%,50%"&gt;
+    &lt;frame src="left.html"&gt;
+    &lt;frame src="right.html"&gt;
+&lt;/frameset&gt;
+    </pre>
+    <p>In this example, the browser window is divided into two columns.</p>
+
+    <h2>3. Attributes of &lt;frameset&gt;</h2>
+
+    <h3>3.1. cols</h3>
+    <p>Specifies the width of each column in the frameset. You can use percentages, pixel values, or the wildcard <code>*</code> to allocate remaining space.</p>
+    <pre>
+&lt;frameset cols="25%,*,25%"&gt;
+    &lt;frame src="left.html"&gt;
+    &lt;frame src="main.html"&gt;
+    &lt;frame src="right.html"&gt;
+&lt;/frameset&gt;
+    </pre>
+
+    <h3>3.2. rows</h3>
+    <p>Specifies the height of each row in the frameset, similar to <code>cols</code>.</p>
+    <pre>
+&lt;frameset rows="50%,50%"&gt;
+    &lt;frame src="top.html"&gt;
+    &lt;frame src="bottom.html"&gt;
+&lt;/frameset&gt;
+    </pre>
+
+    <h2>4. The &lt;frame&gt; Tag</h2>
+    <p>The <code>&lt;frame&gt;</code> tag is used within a <code>&lt;frameset&gt;</code> to define each frame.</p>
+    <pre>
+&lt;frame src="page.html" name="framename" scrolling="yes" noresize&gt;
+    </pre>
+    <ul>
+        <li><strong>src:</strong> Specifies the URL of the document to display in the frame.</li>
+        <li><strong>name:</strong> Assigns a name to the frame, which can be used to target it with links.</li>
+        <li><strong>scrolling:</strong> Controls the scroll bars in the frame (<code>yes</code>, <code>no</code>, or <code>auto</code>).</li>
+        <li><strong>noresize:</strong> Prevents the user from resizing the frame.</li>
+    </ul>
+
+    <h2>5. Nested Framesets</h2>
+    <p>You can nest framesets to create more complex layouts.</p>
+    <pre>
+&lt;frameset rows="50%,50%"&gt;
+    &lt;frame src="top.html"&gt;
+    &lt;frameset cols="50%,50%"&gt;
+        &lt;frame src="left.html"&gt;
+        &lt;frame src="right.html"&gt;
+    &lt;/frameset&gt;
+&lt;/frameset&gt;
+    </pre>
+
+    <h2>6. No Frames Fallback</h2>
+    <p>For browsers that do not support frames, you can provide alternative content using the <code>&lt;noframes&gt;</code> tag.</p>
+    <pre>
+&lt;noframes&gt;
+    &lt;p&gt;Your browser does not support frames. Please update your browser.&lt;/p&gt;
+&lt;/noframes&gt;
+    </pre>
+
+    <h2>7. Example: Simple Website with Frames</h2>
+    <p>Here’s a basic example of a simple website layout using frames:</p>
+    <pre>
+&lt;frameset rows="20%,*"&gt;
+    &lt;frame src="header.html" name="header"&gt;
+    &lt;frameset cols="20%,*"&gt;
+        &lt;frame src="navigation.html" name="nav"&gt;
+        &lt;frame src="content.html" name="content"&gt;
+    &lt;/frameset&gt;
+&lt;/frameset&gt;
+    </pre>
+
+    <h2>8. Why Frames Are Obsolete</h2>
+    <p>Frames have largely fallen out of favor due to several issues:</p>
+    <ul>
+        <li>Accessibility problems for users with disabilities.</li>
+        <li>Complexity in bookmarking and navigating specific pages.</li>
+        <li>Increased difficulty in search engine indexing.</li>
+        <li>Modern alternatives like CSS layouts (Flexbox, Grid) provide better control and flexibility.</li>
+</ul>
+
+
+#iframe <br/>
+#blocks -div tag<br/>
+#font tag - font sizes,increament and decreament of font size, different font faces,font color </br>
+
+  <h2>
+  1. `&lt;iframe&gt;` Tag
+  </h2>
+    <p>
+	The `&lt;iframe&gt;` (Inline Frame) tag is used to embed another HTML document within the current document. This allows you to display content from another source or webpage inside a defined area on your page.</p>
+    
+    <h3>Basic Syntax:</h3>
+    <pre>
+&lt;iframe src="https://www.example.com" width="600" height="400" frameborder="0"&gt;&lt;/iframe&gt;
+    </pre>
+    
+    <h3>Common Attributes:</h3>
+    <ul>
+        <li><strong>src:</strong> The URL of the page to embed.</li>
+        <li><strong>width</strong> and <strong>height:</strong> Specify the dimensions of the iframe.</li>
+        <li><strong>frameborder:</strong> Specifies whether or not to display a border around the iframe (`0` for no border, `1` for border).</li>
+    </ul>
+
+    <h2>2. `&lt;div&gt;` Tag</h2>
+    <p>The `&lt;div&gt;` tag is a block-level container used to group HTML elements and apply CSS styles or scripts to them. It’s often used to create layout sections in a webpage.</p>
+    
+    <h3>Basic Syntax:</h3>
+    <pre>
+&lt;div class="content"&gt;
+    &lt;h2&gt;Title&lt;/h2&gt;
+    &lt;p&gt;This is a paragraph inside a div block.&lt;/p&gt;
+&lt;/div&gt;
+    </pre>
+
+    <h3>Common Use:</h3>
+    <p>Grouping content, creating layouts (e.g., headers, footers, sidebars), and applying styles with CSS.</p>
+
+    <h2>3. `&lt;font&gt;` Tag</h2>
+    <p>The `&lt;font&gt;` tag was historically used to define the font face, size, and color of text. However, it is deprecated in HTML5 in favor of CSS for styling text.</p>
+
+    <h3>Basic Syntax:</h3>
+    <pre>
+&lt;font size="3" color="blue" face="Arial"&gt;This is a sample text.&lt;/font&gt;
+    </pre>
+
+    <h3>Attributes:</h3>
+    <ul>
+        <li><strong>size:</strong> Specifies the size of the font. Values range from `1` (smallest) to `7` (largest), or you can use relative values like `+1` or `-1` to increase or decrease size.</li>
+        <li><strong>color:</strong> Sets the color of the font.</li>
+        <li><strong>face:</strong> Specifies the font family (e.g., Arial, Times New Roman).</li>
+    </ul>
+
+
+<h3>FORM :</h3>
+<form action="" method="post">
+first name : <input type="text" name="first_name" placeholder="Enter your first name">
+
+<br />
+
+Last name : <input type="text" name="Last_name" placeholder="Enter your Last name">
+</form>
+<br />
+<br />
+<form action="" method="post">
+   User id : <input type="text" name="user_id" placeholder="Enter your user id">
+    
+    <br />
+    
+   Password: <input type="password" name="password" placeholder="Enter your Password">
+   <br/>
+   <br />
+   <!-- CHECK BOX -->
+    <!-- WE CAN checked to already checked / mandatorly choose one of the subject-->
+
+   <h2>COURSES:</h2>
+  
+   <h4>CHECK BOX</h4>
+   <!-- for ecxample : <input type="checkbox" name="Python" value="on">Python-->
+   <input type="checkbox" name="Python" value="on" checked>Python 
+   <!-- in output we can she the check box of python is already checked ,if you want to uncheck it you can uncheck it !-->
+
+
+   <input type="checkbox" name="c++" value="on">c++
+  
+   <input type="checkbox" name="c" value="on">C
+ 
+   <input type="checkbox" name="java" value="on">Java
+   <br/>
+   <br/>
+<h4>Radio buttons :</h4>
+<br/>
+<input type="radio" name="subject" value="c">C
+ 
+   <input type="radio" name="subject" value="java">Java
+   <input type="radio" name="subject" value="python">python
+   <br/>
+   <br/>
+
+   <select name="dropdown">
+    <option value="Choose your course" selected>Choose your course</option>
+      <option value="c">C</option>
+      <option value="c++">C++</option>
+      <option value="python">Python</option>
+      <option value="Java">Java</option>
+     </select>
+     <br />
+   Suggestions:
+   <br/>
+   <textarea rows="4" cols="50" name="suggestions" placeholder="enter your suggestions"></textarea>
+   <br/>
+
+<input type="file" name="fileupload" accept="image/*" />
+   <br/> 
+
+   <input type="submit" name="submit" value="submit" /><br/>
+<input type="reset"name="reset" value="reset" /><br />
+<input type="button" name="ok" value="ok" /><br />
+<input type="image" name="imagebutton" src = "Images/cat.jpeg" />
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<marquee>korra</marquee>
+ 
+<br />
+<marquee direction="right">chouhan</marquee>
+<br />
+<marquee directon="up" height="40%" behavior="alternate">Hemanth</marquee>
+<br/>
+<marquee direction="left" behavior="alternate">I</marquee>
+<marquee direction="left" behavior="slide">am</marquee>
+<br/>
+<marquee direction ="down" height="30%" behavior="scroll">Hemanth</marquee>
+<br/>
+<marquee behavior="alternate">kumar</marquee>
+
+        <h2>Embeding media</h2>
+
+<embed src="Media/Video.mp4" height="400" width="600">
+  <noembed>Media is not supported by your browser .</noembed>
+</embed>
+
+</body>
+</html>
